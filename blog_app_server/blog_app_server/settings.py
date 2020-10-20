@@ -26,7 +26,7 @@ SECRET_KEY = '*q4kklwo=l@$uk#-3_464_c_8hg0bt2m8v5atsyk4&shkh1l31'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
 
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # 3rd party apps
     'rest_framework',
+    'corsheaders',
 
     # local apps
     'blog.apps.BlogConfig'
@@ -48,6 +49,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
