@@ -99,7 +99,7 @@ with following data.
 }
 ```
 
-It will return a added blog's data in following format.
+It will return an added blog's data in following format.
 
 ```JSON
 {
@@ -127,7 +127,7 @@ Lets call following API to provide an example.
 GET http://localhost:8000/blogs/
 ```
 
-It will return a added blog's data in following format.
+It will return all blogs data in following format.
 
 ```JSON
 [
@@ -157,7 +157,7 @@ Lets call following API to provide an example.
 GET http://localhost:8000/blogs/1/
 ```
 
-It will return a added blog's data in following format.
+It will return a blog's data in following format.
 
 ```JSON
 {
@@ -223,7 +223,7 @@ with following data.
 }
 ```
 
-It will return a added blog's data in following format.
+It will return updated blog's data in following format.
 
 ```JSON
 {
